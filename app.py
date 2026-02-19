@@ -6,6 +6,10 @@ app = Flask(__name__)
 def index():
     return "Sveiki atvykę"
 
+@app.route("/skaiciavimai/")
+def skaiciavimai():
+    return "<h1>Skaičiavimų puslapis</h1>"
+
 
 if __name__ == "__main__":
     app.run(debug=True)
